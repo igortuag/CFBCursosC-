@@ -16,5 +16,7 @@ class Aula08{
         soma = v1 + v2;
 
         System.Console.WriteLine("Olá {0}, a soma entre {1} e {2} é igual a {3}",nome,v1,v2,soma);
+
+        System.Console.WriteLine("Final do programa");
     }
 }
