@@ -1,5 +1,5 @@
 using System;
-class Aula26
+class Aula25
 {
     static void Main(){
         int num = 10;
