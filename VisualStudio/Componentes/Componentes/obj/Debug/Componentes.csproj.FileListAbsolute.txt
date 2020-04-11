@@ -1,0 +1,9 @@
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\bin\Debug\Componentes.exe.config
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\bin\Debug\Componentes.exe
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\bin\Debug\Componentes.pdb
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.csprojAssemblyReference.cache
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.Form1.resources
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.Properties.Resources.resources
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.csproj.GenerateResource.cache
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.exe
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.pdb
