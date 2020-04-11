@@ -12,6 +12,7 @@ namespace Componentes
 {
     public partial class Form1 : Form
     {
+        public int num;
         public Form1()
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace Componentes
                 tb_veiculo.Focus();
                 return;
             }
-            tb_listaVeiculos.Text += tb_veiculo.Text + ", ";
+            btn_valNum.Text += tb_veiculo.Text + ", ";
             tb_veiculo.Clear();
             tb_veiculo.Focus();
 
@@ -34,13 +35,23 @@ namespace Componentes
 
         private void btn_limpar_Click(object sender, EventArgs e)
         {
-            tb_listaVeiculos.Clear();
+            btn_valNum.Clear();
         }
 
         private void btn_mostrar_Click(object sender, EventArgs e)
         {
-            F_Veiculos f_veiculos = new F_Veiculos(tb_listaVeiculos.Text);
+            F_Veiculos f_veiculos = new F_Veiculos(btn_valNum.Text, this);
             f_veiculos.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(num.ToString());
+        }
+
+        private void btn_valNum_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

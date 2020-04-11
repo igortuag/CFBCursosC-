@@ -31,9 +31,10 @@
             this.btn_adicionar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tb_veiculo = new System.Windows.Forms.TextBox();
-            this.tb_listaVeiculos = new System.Windows.Forms.TextBox();
+            this.btn_valNum = new System.Windows.Forms.TextBox();
             this.btn_limpar = new System.Windows.Forms.Button();
             this.btn_mostrar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_adicionar
@@ -64,14 +65,15 @@
             this.tb_veiculo.Size = new System.Drawing.Size(170, 26);
             this.tb_veiculo.TabIndex = 2;
             // 
-            // tb_listaVeiculos
+            // btn_valNum
             // 
-            this.tb_listaVeiculos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_listaVeiculos.Location = new System.Drawing.Point(12, 57);
-            this.tb_listaVeiculos.Multiline = true;
-            this.tb_listaVeiculos.Name = "tb_listaVeiculos";
-            this.tb_listaVeiculos.Size = new System.Drawing.Size(251, 320);
-            this.tb_listaVeiculos.TabIndex = 3;
+            this.btn_valNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_valNum.Location = new System.Drawing.Point(12, 57);
+            this.btn_valNum.Multiline = true;
+            this.btn_valNum.Name = "btn_valNum";
+            this.btn_valNum.Size = new System.Drawing.Size(251, 320);
+            this.btn_valNum.TabIndex = 3;
+            this.btn_valNum.TextChanged += new System.EventHandler(this.btn_valNum_TextChanged);
             // 
             // btn_limpar
             // 
@@ -94,14 +96,25 @@
             this.btn_mostrar.UseVisualStyleBackColor = true;
             this.btn_mostrar.Click += new System.EventHandler(this.btn_mostrar_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 447);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(251, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Valor da Variável num";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(279, 461);
+            this.ClientSize = new System.Drawing.Size(271, 491);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_mostrar);
             this.Controls.Add(this.btn_limpar);
-            this.Controls.Add(this.tb_listaVeiculos);
+            this.Controls.Add(this.btn_valNum);
             this.Controls.Add(this.tb_veiculo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_adicionar);
@@ -120,9 +133,10 @@
         private System.Windows.Forms.Button btn_adicionar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_veiculo;
-        private System.Windows.Forms.TextBox tb_listaVeiculos;
         private System.Windows.Forms.Button btn_limpar;
         private System.Windows.Forms.Button btn_mostrar;
+        private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.TextBox btn_valNum;
     }
 }
 
