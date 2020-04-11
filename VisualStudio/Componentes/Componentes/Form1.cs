@@ -36,5 +36,11 @@ namespace Componentes
         {
             tb_listaVeiculos.Clear();
         }
+
+        private void btn_mostrar_Click(object sender, EventArgs e)
+        {
+            F_Veiculos f_veiculos = new F_Veiculos(tb_listaVeiculos.Text);
+            f_veiculos.ShowDialog();
+        }
     }
 }
