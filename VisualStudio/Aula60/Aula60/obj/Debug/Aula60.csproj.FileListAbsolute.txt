@@ -1,0 +1,9 @@
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Aula60\Aula60\bin\Debug\Aula60.exe.config
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Aula60\Aula60\bin\Debug\Aula60.exe
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Aula60\Aula60\bin\Debug\Aula60.pdb
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Aula60\Aula60\obj\Debug\Aula60.csprojAssemblyReference.cache
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Aula60\Aula60\obj\Debug\Aula60.Properties.Resources.resources
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Aula60\Aula60\obj\Debug\Aula60.csproj.GenerateResource.cache
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Aula60\Aula60\obj\Debug\Aula60.exe
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Aula60\Aula60\obj\Debug\Aula60.pdb
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Aula60\Aula60\obj\Debug\Aula60.F_Principal.resources
