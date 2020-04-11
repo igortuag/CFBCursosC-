@@ -53,5 +53,22 @@ namespace Componentes
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_Checkbox f_checkbox = new F_Checkbox();
+            f_checkbox.ShowDialog();
+        }
+
+        private void checkedListBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_CheckedListBox f_CheckedListBox = new F_CheckedListBox();
+            f_CheckedListBox.ShowDialog();
+        }
     }
 }
