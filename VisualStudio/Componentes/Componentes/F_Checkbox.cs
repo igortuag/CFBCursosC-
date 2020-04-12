@@ -42,5 +42,16 @@ namespace Componentes
                 MessageBox.Show("Patinete marcada");
             }
         }
+
+        private void btn_MostrarFilho_Click(object sender, EventArgs e)
+        {
+            F_FilhoCheckBox f_FilhoCheckBox = new F_FilhoCheckBox();
+            f_FilhoCheckBox.ShowDialog();
+        }
+
+        private void cb_Carro_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
