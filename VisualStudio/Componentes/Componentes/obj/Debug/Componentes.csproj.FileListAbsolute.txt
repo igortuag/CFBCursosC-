@@ -15,3 +15,4 @@ D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\
 D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.F_DateTimePicker.resources
 D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.F_LinkLabel.resources
 D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.F_ListBox.resources
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.F_ListView.resources
