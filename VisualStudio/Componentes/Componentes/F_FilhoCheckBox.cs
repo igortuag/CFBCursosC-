@@ -27,7 +27,7 @@ namespace Componentes
             }
             catch
             {
-                MessageBox.Show("Erro ao abrir formulário")
+                MessageBox.Show("Erro ao abrir formulário");
             }
         }
 
