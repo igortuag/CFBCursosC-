@@ -41,6 +41,7 @@
             this.checkedListBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comboBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dateTimePickerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fLinkLabelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,7 +130,8 @@
             this.checkBoxToolStripMenuItem,
             this.checkedListBoxToolStripMenuItem,
             this.comboBoxToolStripMenuItem,
-            this.dateTimePickerToolStripMenuItem});
+            this.dateTimePickerToolStripMenuItem,
+            this.fLinkLabelToolStripMenuItem});
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.componentesToolStripMenuItem.Text = "Componentes";
@@ -161,6 +163,13 @@
             this.dateTimePickerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dateTimePickerToolStripMenuItem.Text = "DateTimePicker";
             this.dateTimePickerToolStripMenuItem.Click += new System.EventHandler(this.dateTimePickerToolStripMenuItem_Click);
+            // 
+            // fLinkLabelToolStripMenuItem
+            // 
+            this.fLinkLabelToolStripMenuItem.Name = "fLinkLabelToolStripMenuItem";
+            this.fLinkLabelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fLinkLabelToolStripMenuItem.Text = "F_LinkLabel";
+            this.fLinkLabelToolStripMenuItem.Click += new System.EventHandler(this.fLinkLabelToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -204,6 +213,7 @@
         private System.Windows.Forms.ToolStripMenuItem checkedListBoxToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem comboBoxToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dateTimePickerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fLinkLabelToolStripMenuItem;
     }
 }
 
