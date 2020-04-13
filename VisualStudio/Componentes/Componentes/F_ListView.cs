@@ -17,9 +17,17 @@ namespace Componentes
             InitializeComponent();
         }
 
+        private void Obter()
+        {
+            tb_Id.Text = lv_Produtos.SelectedItems[0].SubItems[0].Text;
+            tb_Produto.Text = lv_Produtos.SelectedItems[0].SubItems[1].Text;
+            tb_Qtde.Text = lv_Produtos.SelectedItems[0].SubItems[2].Text;
+            tb_Preco.Text = lv_Produtos.SelectedItems[0].SubItems[3].Text;
+        }
+
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (lv_Produtos.SelectedItems.Count > 0) Obter();
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -80,18 +88,12 @@ namespace Componentes
 
         private void btn_Obter_Click(object sender, EventArgs e)
         {
-            tb_Id.Text = lv_Produtos.SelectedItems[0].SubItems[0].Text;
-            tb_Produto.Text = lv_Produtos.SelectedItems[0].SubItems[1].Text;
-            tb_Qtde.Text = lv_Produtos.SelectedItems[0].SubItems[2].Text;
-            tb_Preco.Text = lv_Produtos.SelectedItems[0].SubItems[3].Text;
+            Obter();
         }
 
         private void lv_Produtos_Click(object sender, EventArgs e)
         {
-            tb_Id.Text = lv_Produtos.SelectedItems[0].SubItems[0].Text;
-            tb_Produto.Text = lv_Produtos.SelectedItems[0].SubItems[1].Text;
-            tb_Qtde.Text = lv_Produtos.SelectedItems[0].SubItems[2].Text;
-            tb_Preco.Text = lv_Produtos.SelectedItems[0].SubItems[3].Text;
+
         }
     }
 }
