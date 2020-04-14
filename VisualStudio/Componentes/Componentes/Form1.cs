@@ -20,7 +20,7 @@ namespace Componentes
 
         private void btn_adicionar_Click(object sender, EventArgs e)
         {
-            if(tb_veiculo.Text == "")
+            if (tb_veiculo.Text == "")
             {
                 MessageBox.Show("Digite um veiculo!");
                 tb_veiculo.Focus();
@@ -111,6 +111,22 @@ namespace Componentes
         {
             F_MonthCalendar f_MonthCalendar = new F_MonthCalendar();
             f_MonthCalendar.ShowDialog();
+        }
+
+        private void MenuNotificacoes_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            if (e.ClickedItem.Name.ToString() == "tsmi_Fechar")
+            {
+                this.Close();
+            }
+            else if (e.ClickedItem.Name.ToString() == "tsmi_Restaurar")
+            {
+                this.WindowState = FormWindowState.Normal;
+            }else if (e.ClickedItem.Name.ToString() == "tsmi_Mensagem")
+            {
+                MessageBox.Show("CFB Cursos - Curso de C#");
+            }
+
         }
     }
 }

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_adicionar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tb_veiculo = new System.Windows.Forms.TextBox();
@@ -46,7 +48,13 @@
             this.listViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.maskedTextBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.monthCalendarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.MenuNotificacoes = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tsmi_Restaurar = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi_Mensagem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmi_Fechar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            this.MenuNotificacoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_adicionar
@@ -207,6 +215,41 @@
             this.monthCalendarToolStripMenuItem.Text = "MonthCalendar";
             this.monthCalendarToolStripMenuItem.Click += new System.EventHandler(this.monthCalendarToolStripMenuItem_Click);
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.ContextMenuStrip = this.MenuNotificacoes;
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "CFBCursos";
+            this.notifyIcon1.Visible = true;
+            // 
+            // MenuNotificacoes
+            // 
+            this.MenuNotificacoes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmi_Restaurar,
+            this.tsmi_Mensagem,
+            this.tsmi_Fechar});
+            this.MenuNotificacoes.Name = "MenuNotificacoes";
+            this.MenuNotificacoes.Size = new System.Drawing.Size(181, 92);
+            this.MenuNotificacoes.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuNotificacoes_ItemClicked);
+            // 
+            // tsmi_Restaurar
+            // 
+            this.tsmi_Restaurar.Name = "tsmi_Restaurar";
+            this.tsmi_Restaurar.Size = new System.Drawing.Size(180, 22);
+            this.tsmi_Restaurar.Text = "Restaurar";
+            // 
+            // tsmi_Mensagem
+            // 
+            this.tsmi_Mensagem.Name = "tsmi_Mensagem";
+            this.tsmi_Mensagem.Size = new System.Drawing.Size(180, 22);
+            this.tsmi_Mensagem.Text = "Mensagem";
+            // 
+            // tsmi_Fechar
+            // 
+            this.tsmi_Fechar.Name = "tsmi_Fechar";
+            this.tsmi_Fechar.Size = new System.Drawing.Size(180, 22);
+            this.tsmi_Fechar.Text = "Fechar";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +272,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.MenuNotificacoes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,6 +298,11 @@
         private System.Windows.Forms.ToolStripMenuItem listViewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem maskedTextBoxToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem monthCalendarToolStripMenuItem;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.ContextMenuStrip MenuNotificacoes;
+        private System.Windows.Forms.ToolStripMenuItem tsmi_Restaurar;
+        private System.Windows.Forms.ToolStripMenuItem tsmi_Mensagem;
+        private System.Windows.Forms.ToolStripMenuItem tsmi_Fechar;
     }
 }
 
