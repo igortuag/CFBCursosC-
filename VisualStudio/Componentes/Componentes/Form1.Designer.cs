@@ -53,6 +53,7 @@
             this.tsmi_Restaurar = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_Mensagem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_Fechar = new System.Windows.Forms.ToolStripMenuItem();
+            this.numericUpDownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.MenuNotificacoes.SuspendLayout();
             this.SuspendLayout();
@@ -147,7 +148,8 @@
             this.listBoxToolStripMenuItem,
             this.listViewToolStripMenuItem,
             this.maskedTextBoxToolStripMenuItem,
-            this.monthCalendarToolStripMenuItem});
+            this.monthCalendarToolStripMenuItem,
+            this.numericUpDownToolStripMenuItem});
             this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
             this.componentesToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.componentesToolStripMenuItem.Text = "Componentes";
@@ -229,26 +231,33 @@
             this.tsmi_Mensagem,
             this.tsmi_Fechar});
             this.MenuNotificacoes.Name = "MenuNotificacoes";
-            this.MenuNotificacoes.Size = new System.Drawing.Size(181, 92);
+            this.MenuNotificacoes.Size = new System.Drawing.Size(134, 70);
             this.MenuNotificacoes.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuNotificacoes_ItemClicked);
             // 
             // tsmi_Restaurar
             // 
             this.tsmi_Restaurar.Name = "tsmi_Restaurar";
-            this.tsmi_Restaurar.Size = new System.Drawing.Size(180, 22);
+            this.tsmi_Restaurar.Size = new System.Drawing.Size(133, 22);
             this.tsmi_Restaurar.Text = "Restaurar";
             // 
             // tsmi_Mensagem
             // 
             this.tsmi_Mensagem.Name = "tsmi_Mensagem";
-            this.tsmi_Mensagem.Size = new System.Drawing.Size(180, 22);
+            this.tsmi_Mensagem.Size = new System.Drawing.Size(133, 22);
             this.tsmi_Mensagem.Text = "Mensagem";
             // 
             // tsmi_Fechar
             // 
             this.tsmi_Fechar.Name = "tsmi_Fechar";
-            this.tsmi_Fechar.Size = new System.Drawing.Size(180, 22);
+            this.tsmi_Fechar.Size = new System.Drawing.Size(133, 22);
             this.tsmi_Fechar.Text = "Fechar";
+            // 
+            // numericUpDownToolStripMenuItem
+            // 
+            this.numericUpDownToolStripMenuItem.Name = "numericUpDownToolStripMenuItem";
+            this.numericUpDownToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.numericUpDownToolStripMenuItem.Text = "NumericUpDown";
+            this.numericUpDownToolStripMenuItem.Click += new System.EventHandler(this.numericUpDownToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -303,6 +312,7 @@
         private System.Windows.Forms.ToolStripMenuItem tsmi_Restaurar;
         private System.Windows.Forms.ToolStripMenuItem tsmi_Mensagem;
         private System.Windows.Forms.ToolStripMenuItem tsmi_Fechar;
+        private System.Windows.Forms.ToolStripMenuItem numericUpDownToolStripMenuItem;
     }
 }
 
