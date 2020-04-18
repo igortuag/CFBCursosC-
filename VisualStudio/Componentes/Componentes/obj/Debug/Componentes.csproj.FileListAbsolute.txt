@@ -21,3 +21,4 @@ D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\
 D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.F_NumericUpDown.resources
 D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.F_PictureBox.resources
 D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.F_ProgressBar.resources
+D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\Componentes\Componentes\obj\Debug\Componentes.F_TrackBar.resources

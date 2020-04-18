@@ -146,5 +146,11 @@ namespace Componentes
             F_ProgressBar f_ProgressBar = new F_ProgressBar();
             f_ProgressBar.ShowDialog();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            F_TrackBar f_TrackBar = new F_TrackBar();
+            f_TrackBar.ShowDialog();
+        }
     }
 }
