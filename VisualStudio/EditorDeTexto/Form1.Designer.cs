@@ -117,8 +117,9 @@
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
+            this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
             // 
             // salvarToolStripMenuItem
             // 
@@ -297,6 +298,7 @@
             this.btn_Abrir.Name = "btn_Abrir";
             this.btn_Abrir.Size = new System.Drawing.Size(23, 22);
             this.btn_Abrir.Text = "Abrir";
+            this.btn_Abrir.Click += new System.EventHandler(this.btn_Abrir_Click);
             // 
             // btn_Salvar
             // 
@@ -451,6 +453,7 @@
             // saveFileDialog1
             // 
             this.saveFileDialog1.DefaultExt = "cfb";
+            this.saveFileDialog1.Filter = "(*.CFB)|*.CFB";
             this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
             // 
             // printDialog1

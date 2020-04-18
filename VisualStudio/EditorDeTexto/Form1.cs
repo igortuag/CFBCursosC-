@@ -75,5 +75,43 @@ namespace EditorDeTexto
         {
 
         }
+
+        private void Abrir()
+        {
+            this.openFileDialog1.Multiselect = false;
+            this.openFileDialog1.Title = "Abrir Arquivo";
+            openFileDialog1.InitialDirectory = @"D:\IgorTuagAndradedeFre\Documents\CURSO C#\VisualStudio\EditorDeTexto";
+            openFileDialog1.Filter = "(*.CFB)|*.CFB";
+            if (this.openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    FileStream arquivo = new FileStream(openFileDialog1.FileName, FileMode.Open, FileAccess.Read);
+                    StreamReader cfb_streamReader = new StreamReader(arquivo);
+                    cfb_streamReader.BaseStream.Seek(0, SeekOrigin.Begin);
+                    this.richTextBox1.Text = "";
+                    string linha = cfb_streamReader.ReadLine();
+                    while (linha != null)
+                    {
+                        this.richTextBox1.Text += linha + "\n";
+                        linha = cfb_streamReader.ReadLine();
+                    }
+                    cfb_streamReader.Close();
+                }catch (Exception ex)
+                {
+                    MessageBox.Show("Erro de leitura: " + ex.Message, "Erro ao ler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btn_Abrir_Click(object sender, EventArgs e)
+        {
+            Abrir();
+        }
+
+        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Abrir();
+        }
     }
 }
