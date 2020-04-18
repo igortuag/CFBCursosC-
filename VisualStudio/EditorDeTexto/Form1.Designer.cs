@@ -154,14 +154,16 @@
             // copiarToolStripMenuItem
             // 
             this.copiarToolStripMenuItem.Name = "copiarToolStripMenuItem";
-            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.copiarToolStripMenuItem.Text = "Copiar";
+            this.copiarToolStripMenuItem.Click += new System.EventHandler(this.copiarToolStripMenuItem_Click);
             // 
             // colarToolStripMenuItem
             // 
             this.colarToolStripMenuItem.Name = "colarToolStripMenuItem";
-            this.colarToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.colarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.colarToolStripMenuItem.Text = "Colar";
+            this.colarToolStripMenuItem.Click += new System.EventHandler(this.colarToolStripMenuItem_Click);
             // 
             // desfazerToolStripMenuItem
             // 
@@ -232,18 +234,21 @@
             this.negritoToolStripMenuItem1.Name = "negritoToolStripMenuItem1";
             this.negritoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.negritoToolStripMenuItem1.Text = "Negrito";
+            this.negritoToolStripMenuItem1.Click += new System.EventHandler(this.negritoToolStripMenuItem1_Click);
             // 
             // italicoToolStripMenuItem
             // 
             this.italicoToolStripMenuItem.Name = "italicoToolStripMenuItem";
             this.italicoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.italicoToolStripMenuItem.Text = "Italico";
+            this.italicoToolStripMenuItem.Click += new System.EventHandler(this.italicoToolStripMenuItem_Click);
             // 
             // sublinhadoToolStripMenuItem
             // 
             this.sublinhadoToolStripMenuItem.Name = "sublinhadoToolStripMenuItem";
             this.sublinhadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sublinhadoToolStripMenuItem.Text = "Sublinhado";
+            this.sublinhadoToolStripMenuItem.Click += new System.EventHandler(this.sublinhadoToolStripMenuItem_Click);
             // 
             // alinharToolStripMenuItem
             // 
@@ -318,6 +323,7 @@
             this.btn_Copiar.Name = "btn_Copiar";
             this.btn_Copiar.Size = new System.Drawing.Size(23, 22);
             this.btn_Copiar.Text = "Copiar";
+            this.btn_Copiar.Click += new System.EventHandler(this.btn_Copiar_Click);
             // 
             // btn_Colar
             // 
@@ -327,6 +333,7 @@
             this.btn_Colar.Name = "btn_Colar";
             this.btn_Colar.Size = new System.Drawing.Size(23, 22);
             this.btn_Colar.Text = "Colar";
+            this.btn_Colar.Click += new System.EventHandler(this.btn_Colar_Click);
             // 
             // btn_Negrito
             // 
@@ -336,6 +343,7 @@
             this.btn_Negrito.Name = "btn_Negrito";
             this.btn_Negrito.Size = new System.Drawing.Size(23, 22);
             this.btn_Negrito.Text = "Negrito";
+            this.btn_Negrito.Click += new System.EventHandler(this.btn_Negrito_Click);
             // 
             // btn_Italico
             // 
@@ -345,6 +353,7 @@
             this.btn_Italico.Name = "btn_Italico";
             this.btn_Italico.Size = new System.Drawing.Size(23, 22);
             this.btn_Italico.Text = "Italico";
+            this.btn_Italico.Click += new System.EventHandler(this.btn_Italico_Click);
             // 
             // btn_Sublinhado
             // 
@@ -354,6 +363,7 @@
             this.btn_Sublinhado.Name = "btn_Sublinhado";
             this.btn_Sublinhado.Size = new System.Drawing.Size(23, 22);
             this.btn_Sublinhado.Text = "Sublinhado";
+            this.btn_Sublinhado.Click += new System.EventHandler(this.btn_Sublinhado_Click);
             // 
             // btn_Fonte
             // 
