@@ -13,7 +13,7 @@ namespace EditorDeTexto
 {
     public partial class Form1 : Form
     {
-        StreamReader leitura = null;
+        StringReader leitura = null;
         public Form1()
         {
             InitializeComponent();
@@ -315,6 +315,79 @@ namespace EditorDeTexto
         private void sublinhadoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Sublinhado();
+        }
+
+        private void AlinharEsquerda()
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Left;
+        }
+        private void AlinharDireita()
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Right;
+        }
+        private void AlinharCentro()
+        {
+            richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
+        }
+
+        private void btn_Esquerda_Click(object sender, EventArgs e)
+        {
+            AlinharEsquerda();
+        }
+
+        private void esquerdaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AlinharEsquerda();
+        }
+
+        private void centralizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AlinharCentro();
+        }
+
+        private void btn_Centro_Click(object sender, EventArgs e)
+        {
+            AlinharCentro();
+        }
+
+        private void btn_Direta_Click(object sender, EventArgs e)
+        {
+            AlinharDireita();
+        }
+
+        private void direitaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AlinharDireita();
+        }
+
+        private void Imprimir()
+        {
+            printDialog1.Document = printDocument1;
+            string texto = this.richTextBox1.Text;
+            leitura = new StringReader(texto);
+            if(printDialog1.ShowDialog() == DialogResult.OK)
+            {
+                this.printDocument1.Print();
+            }
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            float linhasPagina = 0;
+            float PosY = 0;
+            float MargemEsquerda = e.MarginBounds.Left - 50;
+            float MargemSuperior = e.MarginBounds.Top - 50;
+            if (MargemEsquerda < 5)
+            {
+                MargemEsquerda = 20;
+            }
+            if (MargemSuperior < 5)
+            {
+                MargemSuperior = 20;
+            }
+            string linha = null;
+            Font fonte = this.richTextBox1.Font;
+            SolidBrush pincel = new SolidBrush(Color.Black);
         }
     }
 }
