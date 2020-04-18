@@ -375,6 +375,7 @@ namespace EditorDeTexto
         {
             float linhasPagina = 0;
             float PosY = 0;
+            int cont = 0;
             float MargemEsquerda = e.MarginBounds.Left - 50;
             float MargemSuperior = e.MarginBounds.Top - 50;
             if (MargemEsquerda < 5)
@@ -388,6 +389,34 @@ namespace EditorDeTexto
             string linha = null;
             Font fonte = this.richTextBox1.Font;
             SolidBrush pincel = new SolidBrush(Color.Black);
+            linhasPagina = e.MarginBounds.Height / fonte.GetHeight(e.Graphics);
+            linha = leitura.ReadLine();
+            while(cont < linhasPagina)
+            {
+                PosY = (MargemSuperior + (cont * fonte.GetHeight(e.Graphics)));
+                e.Graphics.DrawString(linha, fonte, pincel, MargemEsquerda, PosY, new StringFormat());
+                cont++;
+                linha = leitura.ReadLine();
+            }
+            if(linha != null)
+            {
+                e.HasMorePages = true;
+            }
+            else
+            {
+                e.HasMorePages = false;
+            }
+            pincel.Dispose();
+        }
+
+        private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Imprimir();
+        }
+
+        private void btn_Fonte_Click(object sender, EventArgs e)
+        {
+            fontDialog1.ShowDialog();
         }
     }
 }

@@ -131,8 +131,9 @@
             // imprimirToolStripMenuItem
             // 
             this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
-            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.imprimirToolStripMenuItem.Text = "Imprimir";
+            this.imprimirToolStripMenuItem.Click += new System.EventHandler(this.imprimirToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
@@ -408,6 +409,7 @@
             this.btn_Fonte.Name = "btn_Fonte";
             this.btn_Fonte.Size = new System.Drawing.Size(23, 22);
             this.btn_Fonte.Text = "Fonte";
+            this.btn_Fonte.Click += new System.EventHandler(this.btn_Fonte_Click);
             // 
             // toolStripSeparator8
             // 
